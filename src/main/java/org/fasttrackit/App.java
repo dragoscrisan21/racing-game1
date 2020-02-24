@@ -33,6 +33,29 @@ public class App {
         System.out.println("Colour " + car2.color);
         System.out.println("Damaged " + car2.damage);
 
+        //
+//        carReference.engine = new Engine();
+//        carReference.engine.manufacturer = "vw";
+//        carReference.engine.capacity = 2000;
+
+        Engine engine1 = new Engine();
+        engine1.manufacturer = "vw";
+        engine1.capacity = 2000;
+
+        carReference.engine = engine1;
+        //One object with two references
+        System.out.println("Engine info ");
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+
+        engine1.capacity = 2100;
+
+        System.out.println("Updated engine details ");
+        System.out.println(engine1.capacity);
+        System.out.println(carReference.engine.capacity);
+
+
+
     }
 
 

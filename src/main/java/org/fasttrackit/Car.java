@@ -10,6 +10,8 @@ public class Car {
     int maxSpeed;
     int racingNumber;
     double mileage;
+    //has a relationship; aggregation.
+    Engine engine;
 
 
 
