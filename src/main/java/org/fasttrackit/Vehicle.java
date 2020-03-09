@@ -17,8 +17,8 @@ public class Vehicle {
 
         System.out.println(name + "is accelerating with " + speed + "km/h for " + durationInHours + "h");
 
-       //traveled distance - variabila locala
-       double traveledDistance = speed * durationInHours;
+        //traveled distance - variabila locala
+        double traveledDistance = speed * durationInHours;
 
         System.out.println("traveled Distance " + traveledDistance);
 
@@ -37,4 +37,9 @@ public class Vehicle {
         return traveledDistance;
 
     }
+
+    public void decelerate() {
+        System.out.println("This is just a test");
+    }
+
 }

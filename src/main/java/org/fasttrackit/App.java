@@ -14,6 +14,7 @@ public class App {
         carReference.maxSpeed = 260;
         carReference.mileage = 6.2;
         carReference.fuelLevel = 100;
+        carReference.damage = true;
 
         //Concatenare - se face lipire de Stringuri
         //Ceea ce urmeaza dupa String o sa se transforme automat in string!
@@ -48,6 +49,11 @@ public class App {
 
         System.out.println("Current Distance " + currentDistance);
 
+        Mechanic mechanic = new Mechanic();
+        mechanic.repair(carReference);
+
+        System.out.println("Is car damaged" + vehicle.name);
+
         //One object with two references
         System.out.println("Engine info ");
         System.out.println(engine1.capacity);
@@ -58,6 +64,11 @@ public class App {
         System.out.println("Updated engine details ");
         System.out.println(engine1.capacity);
         System.out.println(carReference.engine.capacity);
+
+//        // modulo operator
+//        System.out.println(4 % 2 == 0);
+//        System.out.println(4 % 3);
+//        System.out.println(4 & 2);
 
 
 
