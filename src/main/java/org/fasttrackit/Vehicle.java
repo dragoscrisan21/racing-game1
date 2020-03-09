@@ -15,7 +15,26 @@ public class Vehicle {
     // semnatura metodei; metoda-public; denumirea metodei-accelerate; lista de parametrii-intre paranteze
     public double accelerate (double speed, double durationInHours) {
 
-        System.out.println(name + "is accelerating with " + speed + "km/h for " + durationInHours + "h");
+        //TODO use more fuel if speed > 120km/h
+    }
+
+        System.out.println(name + "is accelerating with " + speed + "km/h for " + durationInHours + "h") {
+
+            if (fuelLevel <= 0) {
+                System.out.println("Not enough fuel");
+                return 0; }
+            if (speed > maxSpeed); {
+                    System.out.println("Max speed exceeded ");
+                    return 0;
+
+            } else if (speed == maxSpeed) {
+                System.out.println("Careful! Max speed reached");
+            }
+            else {
+                System.out.println("Careful! Max speed reached");
+            }
+
+
 
         //traveled distance - variabila locala
         double traveledDistance = speed * durationInHours;
